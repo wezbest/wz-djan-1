@@ -2,6 +2,7 @@ from rich.console import Console
 from rich.markdown import Markdown
 import subprocess
 from rich.traceback import install
+from rich import print as rprint
 
 install(show_locals=True)
 
@@ -38,7 +39,13 @@ uv run python manage.py runserver
     console.print(md)
 
     # Run command
-    subprocess.run(["uv", "run", "python", "panty1/manage.py", "runserver"])
+    p = subprocess.Popen(["uv", "run", "python", "panty1/manage.py", "runserver"])
+    rprint("[magenta]Server started... press ctrl+c to stop[/magenta]")
+    try:
+        p.wait()
+    except KeyboardInterrupt:
+        p.terminate()
+        rprint("[red]Server stopped..bastard....[/red]")
 
 
 if __name__ == "__main__":
