@@ -12,6 +12,7 @@ console = Console()
 
 # markdown Function
 def markdown1():
+    subprocess.run(["clear"])
     MARKDOWN = """
 # Executing Server Script 
 
