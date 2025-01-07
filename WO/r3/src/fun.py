@@ -5,6 +5,7 @@ import subprocess
 from rich import print as rprint
 
 
+# Mardown Function
 def m1():
     subprocess.run(["clear"])
     MARKDOWN = """
@@ -34,7 +35,10 @@ uv run python manage.py runserver
 def m2():
     # Run command
     p = subprocess.Popen(["uv", "run", "python", "panty1/manage.py", "runserver"])
-    rprint("[magenta]Server started... press ctrl+c to stop[/magenta]")
+    rprint("""[bold green]
+----           
+Server started... press ctrl+c to stop
+------[/bold green]""")
     try:
         p.wait()
     except KeyboardInterrupt:
