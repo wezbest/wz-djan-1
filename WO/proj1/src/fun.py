@@ -3,20 +3,37 @@
 from rich import print as rprint
 from rich.markdown import Markdown
 from rich.console import Console
+from rich.traceback import install
+import subprocess
 
+install(show_locals=True)
 console = Console()
 
 
 # markdown Function
 def markdown1():
     MARKDOWN = """
-# This is an h1
+# Executing Server Script 
 
-Rich can do a pretty *decent* job of rendering markdown.
-
-1. This is a list item
-2. This is another list item
+```py 
+uv run manage.py runserver
+```
 """
     console = Console()
     md = Markdown(MARKDOWN)
     console.print(md)
+
+
+def run_server():
+    # Run command
+    p = subprocess.Popen(["uv", "run", "python", "panty1/manage.py", "runserver"])
+    rprint("""[bold green]
+----           
+Server started... press ctrl+c to stop
+------[/bold green]""")
+    try:
+        p.wait()
+    except KeyboardInterrupt:
+        p.terminate()
+        rprint("""[red]
+Server Stopped ..Fuck all nite ....[/red]""")

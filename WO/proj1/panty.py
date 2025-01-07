@@ -1,5 +1,11 @@
+from src.fun import markdown1
+from rich.traceback import install
+
+install(show_locals=True)
+
+
 def main():
-    print("Hello from proj1!")
+    markdown1()
 
 
 if __name__ == "__main__":
