@@ -23,6 +23,13 @@ uv add rich django
 
 # Test if django is installed 
 uv run django-admin --version
+
+# Setup a new djano project - note you need to make a dir first 
+uv run django-admin startproject p1
+
+# Run the project
+uv run python manage.py runserver
 ```
 
 1. Note since you have an empty project you can just use the intial entry point python file for printing instructions
+2. You can use the rich library which can rener markdown directly on screen

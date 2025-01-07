@@ -1,14 +1,18 @@
 from rich.console import Console
 from rich.markdown import Markdown
+import subprocess
 
 
 def main():
-    print("Hello from r3!")
+    m1()
 
 
 # Rendering Markup Function
 
-MARKDOWN = """
+
+def m1():
+    subprocess.run(["clear"])
+    MARKDOWN = """
 # This is an h1
 
 Rich can do a pretty *decent* job of rendering markdown.
@@ -17,10 +21,9 @@ Rich can do a pretty *decent* job of rendering markdown.
 2. This is another list item
 """
 
-
-console = Console()
-md = Markdown(MARKDOWN)
-console.print(md)
+    console = Console()
+    md = Markdown(MARKDOWN)
+    console.print(md)
 
 
 if __name__ == "__main__":
