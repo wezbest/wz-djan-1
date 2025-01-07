@@ -38,7 +38,7 @@ uv run python manage.py runserver
     console.print(md)
 
     # Run command
-    subprocess.run(["uv run python manage.py runserver"])
+    subprocess.run(["uv", "run", "python", "panty1/manage.py", "runserver"])
 
 
 if __name__ == "__main__":
