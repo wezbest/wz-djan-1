@@ -19,6 +19,13 @@ Rich can do a pretty *decent* job of rendering markdown.
 
 1. This is a list item
 2. This is another list item
+
+# To Run the server 
+
+```py 
+uv run python manage.py runserver
+```
+
 """
 
     console = Console()
