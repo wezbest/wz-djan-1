@@ -17,4 +17,12 @@ uv init p1
 
 # Go inside the project and run it th first time to create the venv
 uv run hello.py
+
+# Then add the django and any other py pkg 
+uv add rich django 
+
+# Test if django is installed 
+uv run django-admin --version
 ```
+
+1. Note since you have an empty project you can just use the intial entry point python file for printing instructions
