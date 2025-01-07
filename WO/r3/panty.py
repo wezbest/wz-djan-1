@@ -45,7 +45,8 @@ uv run python manage.py runserver
         p.wait()
     except KeyboardInterrupt:
         p.terminate()
-        rprint("[red]Server stopped..bastard....[/red]")
+        rprint("""[red]
+Server Stopped ..Fuck all nite ....[/red]""")
 
 
 if __name__ == "__main__":
