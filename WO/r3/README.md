@@ -27,7 +27,7 @@ uv run django-admin --version
 # Setup a new djano project - note you need to make a dir first 
 uv run django-admin startproject p1
 
-# Run the project
+# Run the project - This will open the project in localhost
 uv run python manage.py runserver
 ```
 
