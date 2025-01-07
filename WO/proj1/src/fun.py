@@ -26,7 +26,7 @@ uv run manage.py runserver
 
 def run_server():
     # Run command
-    p = subprocess.Popen(["uv", "run", "python", "panty1/manage.py", "runserver"])
+    p = subprocess.Popen(["uv", "run", "python", "worldtour/manage.py", "runserver"])
     rprint("""[bold green]
 ----           
 Server started... press ctrl+c to stop
