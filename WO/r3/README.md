@@ -33,3 +33,9 @@ uv run python manage.py runserver
 
 1. Note since you have an empty project you can just use the intial entry point python file for printing instructions
 2. You can use the rich library which can rener markdown directly on screen
+3. Acording to the tutorial the above is just to setup the django application , then within that you careate apps
+
+Command to start an app inside django 
+```py 
+uv run manage.py startapp p1
+```
