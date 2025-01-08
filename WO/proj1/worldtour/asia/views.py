@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+# from django.http import HttpResponse
 
 # Variable for pages
 indexpage = """
@@ -38,4 +38,4 @@ indexpage = """
 
 # Create your views here.
 def index(request):
-    return HttpResponse(indexpage)
+    return render(request, "tours/index.html")
