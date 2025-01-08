@@ -55,4 +55,7 @@ uv run manage.py startapp app1
 ```sh 
 # This will create the migrations file in app/migrations directory
 uv run manage.py makemigrations 
+
+# Apply Migrations 
+uv run manage.py migrate
 ```
