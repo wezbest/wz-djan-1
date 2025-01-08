@@ -7,6 +7,6 @@ def index(request):
     page = """
 <h1>Asia AntySnyfrs</h1>
 <h2>Asia ArmpitandAssSmells</h2>
-<button>Asia ArmpitandAssSmells</button>
+<button>Asia StinkSmells</button>
 """
     return HttpResponse(page)
