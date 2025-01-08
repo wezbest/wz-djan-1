@@ -24,6 +24,14 @@ indexpage = """
 <h2>Asia ArmpitandAssSmells</h2>
 <p>Ass and pussy smells</p>
 <button class="secondary">Asia StinkSmells</button>
+<div class="t1">
+<textarea
+  name="bio"
+  placeholder="Write a professional short bio..."
+  aria-label="Professional short bio"
+>
+</div>
+</textarea>
 </body>
 
 """
