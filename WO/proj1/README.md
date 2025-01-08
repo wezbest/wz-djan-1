@@ -4,6 +4,7 @@
    1. [Step to start a django project with uv](#step-to-start-a-django-project-with-uv)
    2. [Creating a app](#creating-a-app)
    3. [Creating Migrations](#creating-migrations)
+3. [Regarding Getting ini ipython](#regarding-getting-ini-ipython)
 
 
 # Proj1 
@@ -59,3 +60,20 @@ uv run manage.py makemigrations
 # Apply Migrations 
 uv run manage.py migrate
 ```
+
+# Regarding Getting ini ipython 
+
+1. Since you are using uv , you have to follow the steps to be able to access it 
+
+```sh 
+# Add the ipykernel
+uv add --dev ipykernel
+
+# Isntall with current user replace
+uv run ipython kernel install --user --name=proj1
+
+# Run with ipython
+uv run --with ipython ipython
+
+```
+- Now when following the panty , it will work , lick assandpussy
