@@ -53,5 +53,6 @@ uv run manage.py startapp app1
 1. After creating the db schema in `app/models.py`
 
 ```sh 
+# This will create the migrations file in app/migrations directory
 uv run manage.py makemigrations 
 ```
