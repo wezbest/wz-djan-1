@@ -38,4 +38,5 @@ indexpage = """
 
 # Create your views here.
 def index(request):
+    tours = Tour.objects.all()
     return render(request, "tours/index.html")
