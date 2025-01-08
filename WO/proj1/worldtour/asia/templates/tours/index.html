@@ -12,7 +12,13 @@
     />
   </head>
   <body>
+    <main class="container-fluid">...</main>
     <h1>AsianArmpit</h1>
+    <ul>
+      {% for tour in tours %}
+      <li>{{ tour }}</li>
+      {% endfor %}
+    </ul>
     <script src="" async defer></script>
   </body>
 </html>
