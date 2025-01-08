@@ -19,10 +19,13 @@ indexpage = """
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
 >
+<body>
 <h1>Asia AntySnyfrs</h1>
 <h2>Asia ArmpitandAssSmells</h2>
 <p>Ass and pussy smells</p>
-<button>Asia StinkSmells</button>
+<button class="secondary">Asia StinkSmells</button>
+</body>
+
 """
 
 
