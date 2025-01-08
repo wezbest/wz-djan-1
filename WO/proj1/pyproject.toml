@@ -8,3 +8,8 @@ dependencies = [
     "django>=5.1.4",
     "rich>=13.9.4",
 ]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
