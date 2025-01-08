@@ -3,6 +3,7 @@
 2. [Commands Used](#commands-used)
    1. [Step to start a django project with uv](#step-to-start-a-django-project-with-uv)
    2. [Creating a app](#creating-a-app)
+   3. [Creating Migrations](#creating-migrations)
 
 
 # Proj1 
@@ -46,3 +47,11 @@ uv run python manage.py runserver
 uv run manage.py startapp app1
 ```
 - This is also menioned in the official docs
+
+## Creating Migrations 
+
+1. After creating the db schema in `app/models.py`
+
+```sh 
+uv run manage.py makemigrations 
+```
